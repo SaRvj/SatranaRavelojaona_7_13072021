@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les petits plats</title>
+    <link rel="icon" type="image/svg" href="images/logo.svg" />
+
+    <script src="https://kit.fontawesome.com/3d79397626.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+   
+</head>
+<body>
+
+    <header class="header">
+        <img class="header__logo" src="images/logo.svg" alt="Les petits plats">
+    </header>
+
+    <!-- Barre de recherche principal -->
+    <section class="search-principal">
+        <input type="text" class="search-principal__input" id="search-principal__input" name="search-principal" spellcheck="true" placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette">
+        <i class="fas fa-search search-principal__icon"></i>
+    </section>
+
+    <!-- Liste des tags actif -->
+    <ul id="tags-list" class="tags-list">
+    </ul>
+
+    <!-- Filtre déroulant de recherche -->
+    <section id="filters-dropdown" class="filters-dropdown">
+    </section>
+
+    <!-- Cartes des recettes -->
+    <section id="recipes-container" class="recipes-container">
+        <p class="empty-msg">Aucune recette ne correspond à votre critère… vous pouvez
+            chercher « tarte aux pommes », « poisson », etc.</p>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="js/main.js" type="module"></script>
+
+</body>
+</html>
