@@ -1,3 +1,8 @@
+import DOM from "../modules/dom.js";
+import search from "../modules/search.js";
+import Recipe from "./recipes.js";
+import FilterDropdown from "./dropdownList.js";
+
 export default class Tags{
     constructor(type, name) {
         this.type = type;

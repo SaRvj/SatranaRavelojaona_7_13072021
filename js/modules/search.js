@@ -1,3 +1,5 @@
+import FilterDropdown from '../classes/dropdownList.js';
+
 const search = (filters, recipes) => {
 
     const searchBar = document.getElementById('search-principal__input');
