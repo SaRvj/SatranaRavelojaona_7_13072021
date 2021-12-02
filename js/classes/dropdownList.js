@@ -1,5 +1,5 @@
 import utils from "../modules/util.js";
-import Recipe from "./recipe.js";
+import Recipe from "./recipes.js";
 
 export default class FilterDropdown{
     constructor(type, items) {

@@ -1,4 +1,4 @@
-import utils from ''
+import utils from '../modules/util.js'
 
 export default class Recipe{
     constructor(data){
@@ -27,7 +27,7 @@ export default class Recipe{
 
         let image = document.createElement('img');
         image.setAttribute('class', 'recipes__img');
-        image.setAttribute('src', 'http://via.placeholder.com/380x300');
+        image.setAttribute('src', 'http://via.placeholder.com/380x300/199190190');
 
         let description = document.createElement('div');
         description.setAttribute('class', 'recipes__description');
