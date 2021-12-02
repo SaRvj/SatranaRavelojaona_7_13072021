@@ -1,3 +1,5 @@
+import Api from "./class/Api.js";
+
 const searchPrincipal = document.getElementById('search-principal__input');
 
 
