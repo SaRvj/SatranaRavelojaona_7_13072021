@@ -1,4 +1,9 @@
-import Api from "./class/Api.js";
+import DOM from "./modules/dom.js";
+import Api from "./classes/Api.js";
+import FilterDropdown from "./classes/dropdownList.js";
+import Tags from "./classes/tag.js";
+import Recipe from "./classes/recipes.js";
+import search from "./modules/search.js";
 
 const searchPrincipal = document.getElementById('search-principal__input');
 
