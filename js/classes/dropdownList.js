@@ -48,7 +48,7 @@ export default class FilterDropdown{
         let list = document.createElement('ul');
         list.setAttribute('class', `dropdown-item__list ${this.type}-dropdown`);
 
-        // remplir de la liste
+        // remplir la liste
         this.items.forEach(item => {
             list.appendChild(item.listElement());
             this.tagList = [...this.tagList, item];

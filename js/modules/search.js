@@ -8,7 +8,7 @@ const search = (filters, recipes) => {
 
     
     /**
-     * boucle sur chaque recette et teste s'il y a une correspondance avec les filtres ou la recherche de l'utilisateur
+     * Boucle sur chaque recette et test s'il y a une correspondance avec les filtres ou la recherche de l'utilisateur
      */
     for (let i = 0; i < recipes.length; i++) {
         let recipe = recipes[i];
@@ -61,7 +61,7 @@ const search = (filters, recipes) => {
 
     FilterDropdown.updateDropDowns(); // Met à jour les filtres disponibles
 
-    // si aucune recette ne correspond, afficher un message à l'utilisateur qu'aucune recette ne correspond à sa recherche
+    // Si aucune recette ne correspond, affiche un message à l'utilisateur qu'aucune recette ne correspond à sa recherche
     if (document.querySelectorAll('.recipes-container .recipes:not(.hidden)').length === 0) {
         document.querySelector('.recipes-container .empty-msg').classList.add('visible');
     }else{
