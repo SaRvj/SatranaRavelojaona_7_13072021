@@ -27,4 +27,90 @@ body {
   text-align: center;
 }
 
+.header {
+  display: grid;
+  place-items: center;
+  padding-top: 42px;
+  padding-bottom: 20px;
+}
+
+.search-principal {
+  position: relative;
+  margin-bottom: 25px;
+}
+.search-principal__input {
+  width: 100%;
+  height: 70px;
+  background-color: #E7E7E7;
+  border: none;
+  border-radius: 5px;
+  padding-left: 25px;
+  padding-right: 70px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.125rem;
+}
+.search-principal__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.search-principal__icon:hover {
+  transform: scale(1.2);
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filters-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 992px) {
+  .filters-dropdown {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.recipes-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+.recipes-container .empty-msg {
+  display: none;
+  margin-top: 20px;
+  grid-area: 1/1/1/4;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.recipes-container .empty-msg.visible {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .recipes-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .recipes-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
