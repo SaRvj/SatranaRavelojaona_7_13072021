@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/SaRvj/SatranaRavelojaona_7_13072021#readme",
   "devDependencies": {
-    "eslint": "^8.3.0",
+    "eslint": "^8.4.1",
     "sass": "^1.44.0"
   }
 }
