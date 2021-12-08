@@ -1,3 +1,52 @@
+body {
+  font-family: "Lato", sans-serif;
+  max-width: 1440px;
+  margin: auto;
+  font-weight: 400;
+  padding: 50px 20px 50px 20px;
+  min-width: 300px;
+}
+@media (max-width: 769px) {
+  body {
+    padding: 0;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1440px) {
+  body {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
 
+ul {
+  list-style: none;
+  padding: 22px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.invisible {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+header {
+  margin-top: 15px;
+}
+
+.col-xl-3 {
+  transition: all 400ms ease;
+}
+
+.col-xl-5 {
+  transition: all 400ms ease;
+}
 
 /*# sourceMappingURL=style.css.map */
