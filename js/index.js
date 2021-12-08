@@ -1,3 +1,4 @@
+import { subject } from "./Subject.js";
 let recipes;
 
 export function loadScripts() {
