@@ -100,4 +100,70 @@ header {
   width: 50%;
 }
 
+.ingredients__results,
+.appliance__results,
+.ustensils__results {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: white;
+  padding-top: 0;
+  padding-bottom: 0;
+  flex-wrap: wrap;
+  margin-top: -5px;
+  z-index: 1;
+  position: absolute;
+  max-height: 350px;
+  overflow: scroll;
+  line-height: 21.6px;
+  width: 100%;
+  -ms-overflow-style: none;
+  /* IE and edge */
+  scrollbar-width: none;
+  /* firefox */
+  /* masquer la barre de défilement pour chrome, safari et opera */
+}
+.ingredients__results::-webkit-scrollbar,
+.appliance__results::-webkit-scrollbar,
+.ustensils__results::-webkit-scrollbar {
+  display: none;
+}
+.ingredients__results li,
+.appliance__results li,
+.ustensils__results li {
+  margin: 5px 0;
+  flex: 30%;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 24px;
+}
+@media (max-width: 1024px) {
+  .ingredients__results li,
+.appliance__results li,
+.ustensils__results li {
+    flex: 50%;
+  }
+}
+@media (max-width: 769px) {
+  .ingredients__results li,
+.appliance__results li,
+.ustensils__results li {
+    flex: 100%;
+  }
+}
+
+.ingredients__results {
+  background-color: #3282F7;
+}
+
+.appliance__results {
+  background-color: #68D9A4;
+}
+
+.ustensils__results {
+  background-color: #ED6454;
+}
+
 /*# sourceMappingURL=style.css.map */
