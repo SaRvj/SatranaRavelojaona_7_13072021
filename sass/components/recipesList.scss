@@ -14,9 +14,9 @@
         background-color: $light-grey;
         overflow: scroll;
         height: 186px;
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-        /* Hide scrollbar for Chrome, Safari and Opera */
+        -ms-overflow-style: none; /* IE et edge */
+        scrollbar-width: none; /* firefox */
+        /* masquer la barre de défilement pour chrome, safari et opera */
         &::-webkit-scrollbar {
           display: none;
         }

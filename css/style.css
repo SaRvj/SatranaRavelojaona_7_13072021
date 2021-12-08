@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Lato", sans-serif;
   max-width: 1440px;
@@ -47,6 +48,56 @@ header {
 
 .col-xl-5 {
   transition: all 400ms ease;
+}
+
+#recipes .card {
+  height: 364px;
+  cursor: pointer;
+}
+#recipes .card__empty {
+  text-align: center;
+  font-size: 26px;
+}
+#recipes .card__picture {
+  height: 178px;
+  background-color: #C7BEBE;
+}
+#recipes .card__informations {
+  background-color: #E7E7E7;
+  overflow: scroll;
+  height: 186px;
+  -ms-overflow-style: none;
+  /* IE et edge */
+  scrollbar-width: none;
+  /* firefox */
+  /* masquer la barre de défilement pour chrome, safari et opera */
+}
+#recipes .card__informations::-webkit-scrollbar {
+  display: none;
+}
+#recipes .card__title {
+  font-weight: 400;
+  font-size: 18px;
+}
+#recipes .card__duration {
+  font-weight: 700;
+  font-size: 18px;
+}
+#recipes .card__ingredients {
+  padding: 0;
+}
+#recipes .card__ingredients p {
+  margin: 0;
+  font-size: 12px;
+}
+#recipes .card__ingredients__name {
+  font-weight: 700;
+}
+#recipes .card__instructions {
+  font-size: 12px;
+  line-height: 12px;
+  height: 110px;
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
