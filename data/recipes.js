@@ -1,4 +1,4 @@
-const recipesArr = [
+export const recipesArr = [
     {
         "id": 1,
         "name" : "Limonade de Coco",

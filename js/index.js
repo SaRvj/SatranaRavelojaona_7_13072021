@@ -1,6 +1,8 @@
 import { subject } from "./subject.js";
 import { recipesArr } from "../data/recipes.js";
 import { listOfInputs } from "./input.js";
+import { Recipes } from "./Recipes.js";
+
 
 let recipes;
 
