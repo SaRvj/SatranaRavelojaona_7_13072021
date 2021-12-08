@@ -1,4 +1,7 @@
-import { subject } from "./Subject.js";
+import { subject } from "./subject.js";
+import { recipesArr } from "../data/recipes.js";
+import { listOfInputs } from "./input.js";
+
 let recipes;
 
 export function loadScripts() {
