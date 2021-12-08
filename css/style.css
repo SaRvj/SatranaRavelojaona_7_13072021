@@ -166,4 +166,93 @@ header {
   background-color: #ED6454;
 }
 
+.selected-tags {
+  color: white;
+  flex-wrap: wrap;
+}
+.selected-tags li {
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.selected-tags li::after {
+  content: "\f057";
+  font-family: "Font Awesome 5 Free";
+  padding-left: 13px;
+  font-weight: 400;
+}
+.selected-tags__ingredients {
+  background-color: #3282F7;
+}
+.selected-tags__appliances {
+  background-color: #68D9A4;
+}
+.selected-tags__ustensils {
+  background-color: #ED6454;
+}
+
+main .search,
+main button {
+  background-color: #E7E7E7 !important;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+  height: 69px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+main button {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+main .closed::placeholder {
+  color: white;
+  opacity: 1;
+}
+main .opened::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+main #tags-search form {
+  margin-right: 25px;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  main #tags-search form {
+    margin-right: 0px;
+  }
+}
+main #tags-search form img {
+  position: absolute;
+  top: 0;
+  right: 18px;
+  transform: translate(0, 280%);
+  cursor: pointer;
+}
+main .search {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .search__ustensiles, main .search__ingredients, main .search__appareils {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  border: none;
+  border-radius: 5px;
+}
+main .search__ingredients {
+  background-color: #3282F7;
+}
+main .search__appareils {
+  background-color: #68D9A4;
+}
+main .search__ustensiles {
+  background-color: #ED6454;
+}
+
 /*# sourceMappingURL=style.css.map */
