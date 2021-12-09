@@ -64,7 +64,6 @@ header {
 }
 #recipes .card__informations {
   background-color: #E7E7E7;
-  overflow: scroll;
   height: 186px;
   -ms-overflow-style: none;
   /* IE et edge */
@@ -98,6 +97,14 @@ header {
   line-height: 12px;
   height: 110px;
   width: 50%;
+}
+#recipes .card__instructions_text {
+  width: 17em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  position: absolute;
 }
 
 .ingredients__results,
