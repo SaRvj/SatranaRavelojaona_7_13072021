@@ -8,3 +8,7 @@ class FormattedRecipes {
         this.descriptionFormatted = recipes.map((recipes) => recipes.description.toLowerCase());
     }
 }
+
+export class Recipes {
+    
+}
