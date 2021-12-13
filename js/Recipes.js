@@ -10,5 +10,14 @@ class FormattedRecipes {
 }
 
 export class Recipes {
-    
+    constructor(recipesArr) {
+        this.recipesList = recipesArr; //toutes les recettes
+        this.filteredRecipes = this.recipesList; //toutes les recettes filtrées
+        this.filteredIngredientsTags = [];
+        this.filteredApplianceTags = [];
+        this.filteredUstensilsTags = [];
+        this.currentInput;
+        this.mainSearchContent;
+        this.selectedTags = { ingredients: [], appliances: [], ustensils: [] };
+    }
 }
