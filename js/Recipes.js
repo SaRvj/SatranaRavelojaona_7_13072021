@@ -1,4 +1,4 @@
-import { capitalizeFirstLetter } from "./functions.js";
+import { capitalizeFirstLetter } from "./function.js";
 
 class FormattedRecipes {
     constructor(recipes) {
