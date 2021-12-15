@@ -21,12 +21,20 @@ export class Recipes {
                 recipetmp.description.toLowerCase().includes(word.toLowerCase())
             ) {
                 recipestmp.push(recipetmp);
+            } else {
+                const ingredientofrecipe = recipetmp.ingredients;
+                for (let j = 0; j < ingredientofrecipe.length; j++) {
+                    let ingredienttmp = ingredientofrecipe[j];
+                    if (
+                        ingredienttmp.ingredient.toLowerCase().includes(word.toLowerCase())
+                    ) {
+                        recipestmp.push(recipetmp);
+                        j = ingredientofrecipe.length;
+                    }
+                }
             }
         }
-        this.filteredRecipes = this.recipesList.filter((recipe) => {
-            return filteredIdRecipes.includes(recipe.id);
-        });
-    
+        this.filteredRecipes = recipestmp;
         this.diplayRecipes(this.filteredRecipes);
     }
 
