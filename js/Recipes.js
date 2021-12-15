@@ -1,14 +1,5 @@
 import { capitalizeFirstLetter } from "./function.js";
 
-class FormattedRecipes {
-    constructor(recipes) {
-        this.id = recipes.map((recipes) => recipes.id);
-        this.ingredientsFormatted = recipes.map((recipes) => recipes.ingredients.map((ingredient) => ingredient.ingredient.toLowerCase()));
-        this.nameFormatted = recipes.map((recipes) => recipes.name.toLowerCase());
-        this.descriptionFormatted = recipes.map((recipes) => recipes.description.toLowerCase());
-    }
-}
-
 export class Recipes {
     constructor(recipesArr) {
         this.recipesList = recipesArr; //toutes les recettes
@@ -21,12 +12,15 @@ export class Recipes {
         this.selectedTags = { ingredients: [], appliances: [], ustensils: [] };
     }
 
-    mainSearch(userSearch) {
-        const formattedRecipes = new FormattedRecipes(this.recipesList);
-        let filteredIdRecipes = [];
-        for (let i in formattedRecipes.ingredientsFormatted) {
-            if (formattedRecipes.ingredientsFormatted[i].includes(userSearch) || formattedRecipes.nameFormatted[i].includes(userSearch) || formattedRecipes.descriptionFormatted[i].includes(userSearch)) {
-                filteredIdRecipes.push(formattedRecipes.id[i]);
+    mainSearch(word) {
+        let recipestmp = [];
+        for (let i = 0; i < this.recipesList.length; i++) {
+            let recipetmp = this.recipesList[i];
+            if (
+                recipetmp.name.toLowerCase().includes(word.toLowerCase()) ||
+                recipetmp.description.toLowerCase().includes(word.toLowerCase())
+            ) {
+                recipestmp.push(recipetmp);
             }
         }
         this.filteredRecipes = this.recipesList.filter((recipe) => {
@@ -85,7 +79,8 @@ export class Recipes {
             });
         }
     }
-    
+
+    //afficher les recettes
     diplayRecipes(filteredRecipes) {
         let recipesCards = document.querySelector("#recipes");
         recipesCards.innerHTML = "";
