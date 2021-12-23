@@ -33,7 +33,7 @@ export class Recipes {
             return filteredIdRecipes.includes(recipe.id);
         });
     
-        this.diplayRecipes(this.filteredRecipes);
+        this.displayRecipes(this.filteredRecipes);
     }
 
     filterTagsResultList(currentInput, userSearch) {
@@ -87,7 +87,7 @@ export class Recipes {
     }
 
     //afficher les recettes
-    diplayRecipes(filteredRecipes) {
+    displayRecipes(filteredRecipes) {
         let recipesCards = document.querySelector("#recipes");
         recipesCards.innerHTML = "";
         recipesCards.innerHTML += `
@@ -261,7 +261,7 @@ export class Recipes {
             filterRecipesByTags(recipes, this.selectedTags);
         });
         this.filteredRecipes = newArray;
-        this.diplayRecipes(this.filteredRecipes);
+        this.displayRecipes(this.filteredRecipes);
         this.filterTagsResultList(this.currentInput, userSearch);
         this.displayListOfTags(tagResultsList);
         this.clickOnTagsHandler(tagResultsList);

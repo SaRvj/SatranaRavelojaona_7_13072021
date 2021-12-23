@@ -40,7 +40,7 @@ class Input {
                     recipesObj.mainSearch(userSearch);
                 }
                 if (recipesObj.selectedTags.ingredients.length == 0 && recipesObj.selectedTags.appliances.length == 0 && recipesObj.selectedTags.ustensils.length == 0 && userSearch.length < 3) {
-                    recipesObj.diplayRecipes(recipesObj.recipesList);
+                    recipesObj.displayRecipes(recipesObj.recipesList);
                 }
                 if (userSearch.length < 3) recipesObj.mainSearchContent = "";
             }
