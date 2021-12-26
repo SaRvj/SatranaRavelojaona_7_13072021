@@ -222,16 +222,16 @@ main .opened::placeholder {
   color: white;
   opacity: 0.5;
 }
-main #tags-search form {
+main #tags-search .form {
   margin-right: 25px;
   position: relative;
 }
 @media (max-width: 1024px) {
-  main #tags-search form {
+  main #tags-search .form {
     margin-right: 0px;
   }
 }
-main #tags-search form img {
+main #tags-search .form img {
   position: absolute;
   top: 0;
   right: 18px;
