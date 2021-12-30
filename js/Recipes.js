@@ -16,8 +16,8 @@ export class Recipes {
         this.filteredIngredientsTags = [];
         this.filteredApplianceTags = [];
         this.filteredUstensilsTags = [];
-        this.currentInput;
-        this.mainSearchContent;
+        this.currentInput = "";
+        this.mainSearchContent = "";
         this.selectedTags = { ingredients: [], appliances: [], ustensils: [] };
     }
 
