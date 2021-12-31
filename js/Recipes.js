@@ -34,7 +34,7 @@ export class Recipes {
         });
     
         this.displayRecipes(this.filteredRecipes);
-        console.timeEnd('algo1')
+        console.timeEnd('algo2')
     }
 
     filterTagsResultList(currentInput, userSearch) {
