@@ -12,6 +12,32 @@ export class Recipes {
         this.selectedTags = { ingredients: [], appliances: [], ustensils: [] };
     }
 
+    // mainSearch(word) {
+    //     let recipestmp = [];
+    //     for (let i = 0; i < this.recipesList.length; i++) {
+    //         let recipetmp = this.recipesList[i];
+    //         if (
+    //             recipetmp.name.toLowerCase().includes(word.toLowerCase()) ||
+    //             recipetmp.description.toLowerCase().includes(word.toLowerCase())
+    //         ) {
+    //             recipestmp.push(recipetmp);
+    //         } else {
+    //             const ingredientofrecipe = recipetmp.ingredients;
+    //             for (let j = 0; j < ingredientofrecipe.length; j++) {
+    //                 let ingredienttmp = ingredientofrecipe[j];
+    //                 if (
+    //                     ingredienttmp.ingredient.toLowerCase().includes(word.toLowerCase())
+    //                 ) {
+    //                     recipestmp.push(recipetmp);
+    //                     j = ingredientofrecipe.length;
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     this.filteredRecipes = recipestmp;
+    //     this.displayRecipes(this.filteredRecipes);
+    // }
+
     mainSearch(word) {
         let recipestmp = [];
         for (let i = 0; i < this.recipesList.length; i++) {
@@ -21,7 +47,7 @@ export class Recipes {
                 recipetmp.description.toLowerCase().includes(word.toLowerCase())
             ) {
                 recipestmp.push(recipetmp);
-            } else {
+            }
                 const ingredientofrecipe = recipetmp.ingredients;
                 for (let j = 0; j < ingredientofrecipe.length; j++) {
                     let ingredienttmp = ingredientofrecipe[j];
@@ -32,10 +58,10 @@ export class Recipes {
                         j = ingredientofrecipe.length;
                     }
                 }
-            }
         }
         this.filteredRecipes = recipestmp;
         this.displayRecipes(this.filteredRecipes);
+        console.timeEnd('algo1')
     }
 
     filterTagsResultList(currentInput, userSearch) {
