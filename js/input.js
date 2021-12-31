@@ -36,7 +36,8 @@ class Input {
                 recipesObj.currentInput = "ustensils";
                 recipesObj.filterRecipesAfterTagSelection(listOfInputs[2].tagResultsList, userSearch);
 
-                if (userSearch.length >= 3 && recipesObj.selectedTags.ingredients == 0 && recipesObj.selectedTags.ingredients == 0 && recipesObj.selectedTags.ustensils == 0) {
+                if (userSearch.length >= 3 && recipesObj.selectedTags.ingredients == 0 && recipesObj.selectedTags.appliances == 0 && recipesObj.selectedTags.ustensils == 0) {
+                    console.time('algo1')
                     recipesObj.mainSearch(userSearch);
                 }
                 if (recipesObj.selectedTags.ingredients.length == 0 && recipesObj.selectedTags.appliances.length == 0 && recipesObj.selectedTags.ustensils.length == 0 && userSearch.length < 3) {
