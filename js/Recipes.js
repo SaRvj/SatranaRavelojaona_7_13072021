@@ -34,7 +34,40 @@ export class Recipes {
         });
     
         this.displayRecipes(this.filteredRecipes);
+        console.timeEnd('algo1')
     }
+
+    // mainSearch(word) {
+    //     let recipestmp = [];
+    //     for (let i = 0; i < this.recipesList.length; i++) {
+    //         let recipetmp = this.recipesList[i];
+    //         if (
+    //             recipetmp.name.toLowerCase().includes(word.toLowerCase()) ||
+    //             recipetmp.description.toLowerCase().includes(word.toLowerCase())
+    //         ) {
+    //             recipestmp.push(recipetmp);
+            
+                
+    //         }
+            
+
+                
+    //             const ingredientofrecipe = recipetmp.ingredients;
+    //             for (let j = 0; j < ingredientofrecipe.length; j++) {
+    //                 let ingredienttmp = ingredientofrecipe[j];
+    //                 if (
+    //                     ingredienttmp.ingredient.toLowerCase().includes(word.toLowerCase())
+    //                 ) {
+    //                     recipestmp.push(recipetmp);
+    //                     j = ingredientofrecipe.length;
+    //                 }
+    //             }
+            
+    //     }
+    //     this.filteredRecipes = recipestmp;
+    //     this.displayRecipes(this.filteredRecipes);
+    //     console.timeEnd('algo1')
+    // }
 
     filterTagsResultList(currentInput, userSearch) {
         this.filteredIngredientsTags = [];
