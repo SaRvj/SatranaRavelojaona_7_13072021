@@ -5,7 +5,7 @@ import { Recipes } from "./Recipes.js";
 
 
 let recipes;
-
+//chargement recettes
 export function loadScripts() {
     recipes = new Recipes(recipesArr);
     recipes.filterTagsResultList();
