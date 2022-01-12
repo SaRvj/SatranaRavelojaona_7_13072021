@@ -19,7 +19,7 @@ export function developTagsSearchResults(listOfInputs, currentInput, recipesObj)
     recipesObj.displayListOfTags(currentInput.tagResultsList);
     recipesObj.clickOnTagsHandler(currentInput.tagResultsList);
 }
-  
+ 
 export function shrinkTagsSearchResults(currentInput) {
     currentInput.inputDOM.value = "";
     //gérer le "placeholder"
@@ -27,7 +27,8 @@ export function shrinkTagsSearchResults(currentInput) {
     //visibilité
     changeInputStyleOnClosing(currentInput);
 }
-  
+
+//gérer le "placeholder"
 function changePlaceholderOnOpening(input) {
     input.inputDOM.classList.remove("closed");
     input.inputDOM.classList.add("opened");
@@ -35,7 +36,8 @@ function changePlaceholderOnOpening(input) {
     if (input.inputType == "appliance") input.inputDOM.setAttribute("placeholder", "Rechercher un appareil");
     if (input.inputType == "ustensils") input.inputDOM.setAttribute("placeholder", "Rechercher un ustensile");
 }
-  
+
+//gérer le "placeholder"
 function changePlaceholderOnClosing(input) {
     input.inputDOM.classList.add("closed");
     input.inputDOM.classList.remove("opened");
